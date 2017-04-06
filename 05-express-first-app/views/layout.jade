@@ -4,4 +4,17 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    //-here not tag only selector
+    ul
+      li Link Text
+      //- add class css and id of css
+      input(type='text').class-name#id-name
+      //- condition if. Here condition declare in index.js or here
+    - var condition = true
+    if condition
+      p It's true
+      //- declare array and foreach
+    - var anyArray = [1,2,3]
+    each value in anyArray
+      p= value
     block content
