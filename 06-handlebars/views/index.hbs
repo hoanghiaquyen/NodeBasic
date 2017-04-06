@@ -7,6 +7,7 @@
     <p>It's false</p>
 {{/if}} 
 
-{{# each anyArray }}
-    <p>{{this}}</p>
+{{# each anyArray as |val key|}}
+    {{!--<p>{{this}}</p>--}}
+    {{key}} : {{val}}
 {{/each}}
